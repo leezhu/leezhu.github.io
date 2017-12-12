@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Github中使用Markdown编辑中文文章"
+title: "Github中使用Markdown编辑中文文章注意事项"
 date: 2017-12-12 
 description: ""
 tag: 感悟 
