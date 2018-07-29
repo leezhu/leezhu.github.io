@@ -3,11 +3,11 @@ layout: page
 title: 关于我 
 ---
 
-一个 后端服务器 开发者，崇尚技术，自己的小兴趣折腾点新技术，喜欢尝鲜。
+一个 后端 开发者，崇尚技术，自己的小兴趣折腾点新技术，喜欢尝鲜。
 <p>
-目前还是研究生在读，即将入职<a target="_blank" href="https://www.kugou.com">酷狗音乐</a>,如果需要内推请email我。
+目前在<a target="_blank" href="https://www.kugou.com">酷狗音乐</a>工作,如果需要内推请email我。
 <p>
-本身是做后端，也逐步尝试Java，机器学习等后台技术。
+本身是做后端，也逐步尝试机器学习等新技术。
 
 <p>
 
