@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://leezhu.github.io/books/</loc>
+    <lastmod>2018-09-13T02:13:58+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://leezhu.github.io/categories/</loc>
     <lastmod>2018-09-13T01:59:03+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://leezhu.github.io/about/about/</loc>
+    <loc>https://leezhu.github.io/about/</loc>
     <lastmod>2018-09-13T01:35:46+00:00</lastmod>
   </url>
   
@@ -24,12 +29,6 @@
   
   <url>
     <loc>https://leezhu.github.io/tags/about/</loc>
-    <lastmod>2018-09-13T01:35:46+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://leezhu.github.io/about/</loc>
     <lastmod>2018-09-13T01:35:46+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -58,7 +57,7 @@
   
   <url>
     <loc>https://leezhu.github.io/</loc>
-    <lastmod>2018-09-13T01:59:03+00:00</lastmod>
+    <lastmod>2018-09-13T02:13:58+00:00</lastmod>
     <priority>0</priority>
   </url>
   
