@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>爱党 on leezhu的博客</title>
+    <link>https://leezhu.github.io/tags/%E7%88%B1%E5%85%9A/</link>
+    <description>Recent content in 爱党 on leezhu的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 13 Sep 2018 01:35:46 +0000</lastBuildDate>
+    
+	<atom:link href="https://leezhu.github.io/tags/%E7%88%B1%E5%85%9A/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>关于我</title>
+      <link>https://leezhu.github.io/about/about/</link>
+      <pubDate>Thu, 13 Sep 2018 01:35:46 +0000</pubDate>
+      
+      <guid>https://leezhu.github.io/about/about/</guid>
+      <description>后端开发工程师，Python、Go初学者. 不断寻找自己的兴趣与爱好,坚持做好每一件事,爱家人爱生活.三观正,爱国爱党,努力做好党的接班人.</description>
+    </item>
+    
+  </channel>
+</rss>
