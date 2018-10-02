@@ -7,20 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>关于我 | 飞雪的博客</title>
-    <meta property="og:title" content="关于我 - 飞雪的博客">
+    <title>Mac下安装XX—Net(翻墙) | 飞雪的博客</title>
+    <meta property="og:title" content="Mac下安装XX—Net(翻墙) - 飞雪的博客">
     <meta property="og:type" content="article">
         
-    <meta property="article:published_time" content="2018-09-13T01:35:46&#43;08:00">
+    <meta property="article:published_time" content="2018-10-02T17:12:59&#43;08:00">
         
         
-    <meta property="article:modified_time" content="2018-09-13T01:35:46&#43;08:00">
+    <meta property="article:modified_time" content="2018-10-02T17:12:59&#43;08:00">
         
     <meta name="Keywords" content="golang,go语言,go语言笔记,leezhu,,博客,项目管理,python,软件架构,公众号,小程序">
-    <meta name="description" content="关于我">
+    <meta name="description" content="Mac下安装XX—Net(翻墙)">
         
     <meta name="author" content="飞雪">
-    <meta property="og:url" content="https://leezhu.github.io/about/">
+    <meta property="og:url" content="https://leezhu.github.io/post/mac_xx--net/">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="/css/normalize.css">
@@ -45,13 +45,13 @@
             </div>
             <div>
                 <nav id="nav-menu" class="clearfix">
-                    <a class="" href="https://leezhu.github.io/">首页</a>
+                    <a class="current" href="https://leezhu.github.io/">首页</a>
                     
                     <a  href="/books/" title="阅读书籍">阅读书籍</a>
                     
                     <a  href="/archives/" title="归档">归档</a>
                     
-                    <a class="current" href="/about/" title="关于">关于</a>
+                    <a  href="/about/" title="关于">关于</a>
                     
                 </nav>
             </div>
@@ -68,17 +68,63 @@
                 <div class="res-cons">
                     <article class="post">
                         <header>
-                            <h1 class="post-title">关于我</h1>
+                            <h1 class="post-title">Mac下安装XX—Net(翻墙)</h1>
                         </header>
                         <date class="post-meta meta-date">
-                            2018年9月13日
-                            01:35
+                            2018年10月2日
+                            17:12
                         </date>
+                        
+                        <div class="post-meta meta-category">
+                            |
+                            
+                                <a href="/categories/%E5%B7%A5%E5%85%B7">工具</a>
+                            
+                        </div>
                         
                         
                         <div class="post-content">
-                            <p>后端开发工程师，Python、Go初学者.<br />
-不断寻找自己的兴趣与爱好,坚持做好每一件事,爱家人爱生活.三观正,爱国爱党,努力做好党的接班人.</p>
+                            
+
+<blockquote>
+<p>生活就像万花筒，缤纷精彩，于是便有了那些所谓的快乐、幸福。</p>
+</blockquote>
+
+<p>xx-net是一个非常好用的翻墙软件，在windows下安装比较方便，但是随着我换Mac后发现没有一个完整的资料介绍安装过程，因此自己在这里介绍下如何安装。我用的Mac Pro17版，Mac安装XX-Net最大的坑就在于开启IPv6比较麻烦，需要关闭Mac权限控制，相当于手机root那种，我建议是安装需要开启IPV6的软件后，将权限又设置回来。Mac对隐私比较注重，因此在安装外部软件的时候，注意要在系统设置里面的隐私选项那里进入后选择一直允许。</p>
+
+<hr />
+
+<h2 id="安装chrome">安装chrome</h2>
+
+<p>xx-net使用的浏览器必须是Chrome，安装包不太容易找。安装完成时需要设定为默认浏览器。</p>
+
+<h3 id="下载xx-net">下载xx-net</h3>
+
+<p>可直接下载<a href="https://github.com/XX-net/XX-Net">xx-net</a>解压，在文件里面有一个SwitchyOmega文件夹，将.crx文件放入chrome://extensions扩展程序里进行安装，[<strong>注意</strong>]()需要打开开发者模式，拖拽到扩展程序页面安装即可。然后进入xx-net文件夹点击[start]()文件，默认会终端打开，会自动打开浏览器。</p>
+
+<h2 id="更新情景模式">更新情景模式</h2>
+
+<p>进入启动xx-net自动打开浏览器的页面，点击左侧的Import/Export导入SwitchyOmega文件夹下的[.bak]()备份情景模式文件。导入后，会在左侧多出几个自动切换模式，点击<strong>GAE-Proxy自动切换</strong>，然后在页面中点击立刻下载模式。启动xx-net后会提示[<em>&ldquo;仅 IPv6&rdquo; 不可用，请检查</em>]()这个时候就需要开启ipv6</p>
+
+<h3 id="关闭mac权限控制">关闭Mac权限控制</h3>
+
+<p>Mac是限制安装第三方来源的软件，可以在终端中用<code>csrutil status</code> 命令来查看权限是否打开，如果是enable则需要关闭。可以按以下步骤进行操作：</p>
+
+<ul>
+<li>重启开机的时候不停按住<code>comman + r</code>键，会进入修复模式。</li>
+<li>在上面选择终端，输入<code>csrutil disable</code>会提示关闭成功，然后重启电脑。</li>
+</ul>
+
+<h3 id="安装开启ipv6软件">安装开启IPv6软件</h3>
+
+<ul>
+<li>下载安装<a href="https://sourceforge.net/projects/tuntaposx/">tuntaposx</a></li>
+<li>下载安装<a href="http://www.deepdarc.com/miredo-osx-prerelease2.pkg.zip">mired</a>,<strong>注意的是</strong>需要将在系统设置中，点击安全与隐私设置，允许一直打开其他来源安装。否则pkg包不会允许安装。</li>
+</ul>
+
+<h3 id="启动xx-net">启动xx-net</h3>
+
+<p>一切准备就绪后就可以运行xx-net了，在XX-Net文件夹下，点击<code>start</code>会自动打开Chrome，从页面中的状态我们可以看到一切ok，然后选择右侧switchyomega图标中GAE-Proxy自动切换，这时候我们键入<a href="www.google.com">google</a>检验安装是否成功。如果不能访问，检查前面5个步骤是否都做到位。</p>
 
                         </div>
 
@@ -87,6 +133,12 @@
 <div class="post-archive">
     <h2>See Also</h2>
     <ul class="listing">
+        
+        <li><a href="/books/">阅读书籍推荐</a></li>
+        
+        <li><a href="/categories/">分类</a></li>
+        
+        <li><a href="/about/">关于我</a></li>
         
         <li><a href="/archives/">归档</a></li>
         
@@ -100,9 +152,9 @@
                             
                             <ul class="clearfix">
                                 
-                                <li><a href="/tags/about">about</a></li>
+                                <li><a href="/tags/%E7%BF%BB%E5%A2%99">翻墙</a></li>
                                 
-                                <li><a href="/tags/%E7%88%B1%E5%85%9A">爱党</a></li>
+                                <li><a href="/tags/mac">Mac</a></li>
                                 
                             </ul>
                             

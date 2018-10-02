@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://leezhu.github.io/post/mac_xx--net/</loc>
+    <lastmod>2018-10-02T17:12:59+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://leezhu.github.io/books/</loc>
     <lastmod>2018-09-13T02:13:58+00:00</lastmod>
   </url>
@@ -39,8 +44,14 @@
   </url>
   
   <url>
+    <loc>https://leezhu.github.io/tags/mac/</loc>
+    <lastmod>2018-10-02T17:12:59+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://leezhu.github.io/post/</loc>
-    <lastmod>2017-09-17T10:11:10+00:00</lastmod>
+    <lastmod>2018-10-02T17:12:59+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -52,6 +63,12 @@
   <url>
     <loc>https://leezhu.github.io/tags/</loc>
     <lastmod>2018-09-13T01:35:46+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://leezhu.github.io/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2018-10-02T17:12:59+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -74,6 +91,12 @@
   </url>
   
   <url>
+    <loc>https://leezhu.github.io/tags/%E7%BF%BB%E5%A2%99/</loc>
+    <lastmod>2018-10-02T17:12:59+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://leezhu.github.io/tags/%E9%9D%A2%E8%AF%95/</loc>
     <lastmod>2017-09-17T10:11:10+00:00</lastmod>
     <priority>0</priority>
@@ -81,7 +104,7 @@
   
   <url>
     <loc>https://leezhu.github.io/</loc>
-    <lastmod>2018-09-13T02:13:58+00:00</lastmod>
+    <lastmod>2018-10-02T17:12:59+08:00</lastmod>
     <priority>0</priority>
   </url>
   
