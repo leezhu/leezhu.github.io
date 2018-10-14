@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>总结 on In English</title>
+    <title>总结 on 飞雪的博客</title>
     <link>https://leezhu.github.io/categories/%E6%80%BB%E7%BB%93/</link>
-    <description>Recent content in 总结 on In English</description>
+    <description>Recent content in 总结 on 飞雪的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 17 Sep 2017 10:11:10 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Oct 2018 10:42:24 +0800</lastBuildDate>
     
 	<atom:link href="https://leezhu.github.io/categories/%E6%80%BB%E7%BB%93/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mysql_index</title>
+      <link>https://leezhu.github.io/post/mysql_index/</link>
+      <pubDate>Sun, 14 Oct 2018 10:42:24 +0800</pubDate>
+      
+      <guid>https://leezhu.github.io/post/mysql_index/</guid>
+      <description> 长期在用sql，所以想对mysql做一下简要的整理，主要是最近自己工作需要用到的，和写代码要注意sql语句的地方。
+Tips  Update：不能用子查询，例如update table_name set xx=&#39;&#39; where id in (select id ....),mysql5.7不支持，只能用inner join方式进行处理，将此表联合起来处理。正确姿势是update table_name a inner join(select id from table where id&amp;gt;=.. limit 1,1)t on a.id=t.id set a.&#39;字段&#39;=2;这段代码意思是指定范围内的id进行更新。
+ index：1、mysql的索引网上内容很多，这里详细就不赘述了。在实际开发中，对于上百万的行的mysql表来说，将经常查询的语句加上索引能够加快查询，不至于拖垮数据库。2、索引最好在建表的时候就想好建立，不然等到表行数超过上千万时，建索引非常慢。3、对于sql语句，索引的字段类型要符合表字段类型，例如字段是varchar类型，最好用字符型，这样能够加快查找。4、如果涉及数据库的程序比较慢时，最好查下数据库的慢查询日志，看是否是哪条记录。然后就进行优化。5、sql语句没有走索引会很慢，必要时可以加强制索引。
+  Sql 添加索引： ALTER TABLE table_name ADD INDEX index_name (column1, column2,column3 )
+增加列： alter table TABLE_NAME add column NEW_COLUMN_NAME varchar(20) not null default &#39;&#39; comment &#39;&#39;;
+修改索引： --先删除 ALTER TABLE user DROP INDEX idx_user_username; --再以修改后的内容创建同名索引 CREATE INDEX idx_user_username ON user (username(8));  </description>
+    </item>
     
     <item>
       <title>秋招找工作那点事</title>

@@ -7,25 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>爱党 | 飞雪的博客</title>
-    <meta property="og:title" content="爱党 - 飞雪的博客">
+    <title>Mysql_index | 飞雪的博客</title>
+    <meta property="og:title" content="Mysql_index - 飞雪的博客">
     <meta property="og:type" content="article">
         
+    <meta property="article:published_time" content="2018-10-14T10:42:24&#43;08:00">
+        
+        
+    <meta property="article:modified_time" content="2018-10-14T10:42:24&#43;08:00">
         
     <meta name="Keywords" content="golang,go语言,go语言笔记,leezhu,,博客,项目管理,python,软件架构,公众号,小程序">
-    <meta name="description" content="爱党">
+    <meta name="description" content="Mysql_index">
         
     <meta name="author" content="飞雪">
-    <meta property="og:url" content="https://leezhu.github.io/tags/%E7%88%B1%E5%85%9A/">
+    <meta property="og:url" content="https://leezhu.github.io/post/mysql_index/">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="/css/normalize.css">
     
+    <link rel="stylesheet" href="/css/prism.css">
+    
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="alternate" type="application/rss+xml+xml" href="https://leezhu.github.io/tags/%E7%88%B1%E5%85%9A/index.xml" title="飞雪的博客" />
     <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 </head>
-
 
 <body>
 <header id="header" class="clearfix">
@@ -41,7 +45,7 @@
             </div>
             <div>
                 <nav id="nav-menu" class="clearfix">
-                    <a class="" href="https://leezhu.github.io/">首页</a>
+                    <a class="current" href="https://leezhu.github.io/">首页</a>
                     
                     <a  href="/books/" title="阅读书籍">阅读书籍</a>
                     
@@ -62,24 +66,94 @@
 
             <div class="col-8" id="main">
                 <div class="res-cons">
+                    <article class="post">
+                        <header>
+                            <h1 class="post-title">Mysql_index</h1>
+                        </header>
+                        <date class="post-meta meta-date">
+                            2018年10月14日
+                            10:42
+                        </date>
+                        
+                        <div class="post-meta meta-category">
+                            |
+                            
+                                <a href="/categories/%E6%80%BB%E7%BB%93">总结</a>
+                            
+                        </div>
+                        
+                        
+                        <div class="post-content">
+                            
+
+<p>长期在用sql，所以想对mysql做一下简要的整理，主要是最近自己工作需要用到的，和写代码要注意sql语句的地方。</p>
+
+<h3 id="tips">Tips</h3>
+
+<ul>
+<li><p>Update：不能用子查询，例如<code>update table_name set xx='' where id in (select id ....)</code>,mysql5.7不支持，只能用inner join方式进行处理，将此表联合起来处理。正确姿势是<code>update table_name  a inner join(select id from table where id&gt;=.. limit 1,1)t on a.id=t.id set a.'字段'=2;</code>这段代码意思是指定范围内的id进行更新。</p></li>
+
+<li><p>index：1、mysql的索引网上内容很多，这里详细就不赘述了。在实际开发中，对于上百万的行的mysql表来说，将经常查询的语句加上索引能够<strong>加快查询</strong>，不至于拖垮数据库。2、索引最好在建表的时候就想好建立，不然等到表行数超过上千万时，建索引非常慢。3、对于sql语句，索引的字段类型要符合表字段类型，例如字段是varchar类型，最好用字符型，这样能够加快查找。4、如果涉及数据库的程序比较慢时，最好查下数据库的慢查询日志，看是否是哪条记录。然后就进行优化。5、sql语句没有走索引会很慢，必要时可以加强制索引。</p></li>
+</ul>
+
+<h3 id="sql">Sql</h3>
+
+<h4 id="添加索引">添加索引：</h4>
+
+<p><code>ALTER  TABLE  table_name  ADD  INDEX index_name (column1,  column2,column3 )</code></p>
+
+<h4 id="增加列">增加列：</h4>
+
+<p><code>alter table TABLE_NAME add column NEW_COLUMN_NAME varchar(20) not null default '' comment '';</code></p>
+
+<h4 id="修改索引">修改索引：</h4>
+
+<pre><code>--先删除
+
+ALTER TABLE user
+
+DROP INDEX idx_user_username;
+
+--再以修改后的内容创建同名索引
+
+CREATE INDEX idx_user_username ON user (username(8));
+</code></pre>
+
+                        </div>
+
+                        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/post/mac_xx--net/">Mac下安装XX—Net(翻墙)</a></li>
+        
+        <li><a href="/books/">阅读书籍推荐</a></li>
+        
+        <li><a href="/categories/">分类</a></li>
+        
+        <li><a href="/about/">关于我</a></li>
+        
+        <li><a href="/archives/">归档</a></li>
+        
+    </ul>
+</div>
+
+
+                        <div class="post-meta meta-tags">
+                            
+                            <ul class="clearfix">
+                                
+                                <li><a href="/tags/mysql">mysql</a></li>
+                                
+                            </ul>
+                            
+                        </div>
+                    </article>
                     
-                    <h3 class="archive-title">
-                        包含标签
-                        <span class="keyword">爱党</span>
-                        的文章
-                    </h3>
-                    
-
-                    
-
-                    
-
-
-
-
                 </div>
             </div>
-
             <div id="secondary">
     <section class="widget">
         <form id="search" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
@@ -167,9 +241,19 @@
 </footer>
 
 
+<script type="text/javascript" src="/js/prism.js" async="true"></script>
+<script type="text/javascript">
+window.MathJax = {
+    tex2jax: {
+        inlineMath: [ ['$','$'] ],
+        processEscapes: true
+    }
+};
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
 <a id="rocket" href="#top" class="show"></a>
 <script type="text/javascript" src="/js/totop.js?v=0.0.0" async=""></script>
-
 
 
 

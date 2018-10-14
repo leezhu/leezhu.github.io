@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on In English</title>
+    <title>Tags on 飞雪的博客</title>
     <link>https://leezhu.github.io/tags/</link>
-    <description>Recent content in Tags on In English</description>
+    <description>Recent content in Tags on 飞雪的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 13 Sep 2018 01:35:46 +0000</lastBuildDate>
@@ -26,6 +26,15 @@
       <pubDate>Tue, 02 Oct 2018 17:12:59 +0800</pubDate>
       
       <guid>https://leezhu.github.io/tags/mac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mysql</title>
+      <link>https://leezhu.github.io/tags/mysql/</link>
+      <pubDate>Sun, 14 Oct 2018 10:42:24 +0800</pubDate>
+      
+      <guid>https://leezhu.github.io/tags/mysql/</guid>
       <description></description>
     </item>
     
