@@ -17,7 +17,7 @@
       <pubDate>Thu, 27 Dec 2018 22:39:47 +0800</pubDate>
       
       <guid>https://leezhu.github.io/post/gobase1/</guid>
-      <description>关键字 break default func interface select case defer go map struct chan else goto package switch const fallthrough if range type continue for import return var  *注意：*关键字不可以使用
+      <description>关键字 break default func interface select case defer go map struct chan else goto package switch const fallthrough if range type continue for import return var  注意:关键字不可以使用
 变量声明： 一般声明： ​ 1、显示声明：var variable int ,变量名是在后面
 ​ 2、隐式声明：var variable = 1, 没有类型
 ​ 3、简短声明：varible:=1 .
@@ -26,15 +26,6 @@
 分组声明 const ( i=100 j=200 ) var ( a=100 b=200 )  注意：go语言是可以不声明类型直接用，但是简短声明是必须在函数内生效，不可用于包内。go和python 有很多类似的地方。分组声明针对于同一种类型的变量可以放在一起声明
 常量： ​ const:是常量的标志，可以定义为多个类型，例如：
 ​ 1.const constName =value</description>
-    </item>
-    
-    <item>
-      <title>Wget_slice_download</title>
-      <link>https://leezhu.github.io/post/wget_slice_download/</link>
-      <pubDate>Sat, 27 Oct 2018 14:41:59 +0800</pubDate>
-      
-      <guid>https://leezhu.github.io/post/wget_slice_download/</guid>
-      <description></description>
     </item>
     
     <item>

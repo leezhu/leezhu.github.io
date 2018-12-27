@@ -95,11 +95,11 @@ const    fallthrough  if      range        type
 continue for          import  return       var
 </code></pre>
 
-<p>*注意：*关键字不可以使用</p>
+<p><em>注意</em>:关键字不可以使用</p>
 
 <h3 id="变量声明">变量声明：</h3>
 
-<h6 id="一般声明">一般声明：</h6>
+<h4 id="一般声明">一般声明：</h4>
 
 <p>​   1、显示声明：var variable int ,变量名是在后面</p>
 
@@ -111,7 +111,7 @@ continue for          import  return       var
 
 <p>​   5、_,varible:=1,2. 下划线 _一般用于占位符，不进行使用，可以用于索引等</p>
 
-<h6 id="分组声明">分组声明</h6>
+<h4 id="分组声明">分组声明</h4>
 
 <pre><code class="language-go">const (
 	i=100
@@ -159,7 +159,7 @@ var (
 
 <h3 id="高级数据结构">高级数据结构</h3>
 
-<h6 id="array数组">array数组</h6>
+<h4 id="array数组">array数组</h4>
 
 <p><code>var varible [10]int</code>,array长度不可变，默认赋值是0</p>
 
@@ -177,7 +177,7 @@ var (
 doubleArray:=[2][4]int{{1,2,3},{3,4,5}}
 </code></pre>
 
-<h6 id="slice-动态数组">slice-动态数组</h6>
+<h4 id="slice-动态数组">slice-动态数组</h4>
 
 <p>​   <strong>声明</strong>：<code>var flslice[]int</code>可以没有长度。底层实现还是array,只是是引用而已。</p>
 
@@ -189,7 +189,7 @@ doubleArray:=[2][4]int{{1,2,3},{3,4,5}}
 
 <p>*提示：*slice和数组切片操作可参照python的list操作，基本类似</p>
 
-<h6 id="map-映射">map-映射</h6>
+<h4 id="map-映射">map-映射</h4>
 
 <p>map与python的dict是类似的，k-v结构，key可以是int或者string等类型。map和slice一样都是引用类型，没有长度限制。make函数用于内建类型（map, slice,channel）进行内存分配</p>
 
@@ -211,18 +211,18 @@ if ok{
 }
 </code></pre>
 
-<h6 id="make与new的区别">make与new的区别</h6>
+<h4 id="make与new的区别">make与new的区别</h4>
 
 <ul>
 <li>make是指定slice、map、channal这三种类型分配内容，返回的是类型的零值</li>
 <li>new是建立内存，返回的是指针。</li>
 </ul>
 
-<h6 id="零值">零值</h6>
+<h4 id="零值">零值</h4>
 
 <p>是类型变量填充前的默认值，<code>int类型</code>的都是0，字节或者16进制值会有点不一样。布尔型是false,string类型是&rdquo;&ldquo;.</p>
 
-<p>注意*：引用类型会被另外一个引用改变，想想可不可以加const就不会被改变了。</p>
+<p>*注意*：引用类型会被另外一个引用改变，想想可不可以加const就不会被改变了。</p>
 
                         </div>
 
@@ -232,8 +232,6 @@ if ok{
     <h2>See Also</h2>
     <ul class="listing">
         
-        <li><a href="/post/wget_slice_download/">Wget_slice_download</a></li>
-        
         <li><a href="/post/mysql_index/">Mysql_index</a></li>
         
         <li><a href="/post/mac_xx--net/">Mac下安装XX—Net(翻墙)</a></li>
@@ -241,6 +239,8 @@ if ok{
         <li><a href="/books/">阅读书籍推荐</a></li>
         
         <li><a href="/categories/">分类</a></li>
+        
+        <li><a href="/about/">关于我</a></li>
         
     </ul>
 </div>
@@ -279,10 +279,6 @@ if ok{
             
             <li>
                 <a href="https://leezhu.github.io/post/gobase1/" title="go基础之变量类型(一)">go基础之变量类型(一)</a>
-            </li>
-            
-            <li>
-                <a href="https://leezhu.github.io/post/wget_slice_download/" title="Wget_slice_download">Wget_slice_download</a>
             </li>
             
             <li>

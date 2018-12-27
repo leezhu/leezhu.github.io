@@ -17,7 +17,7 @@
       <pubDate>Thu, 27 Dec 2018 22:39:47 +0800</pubDate>
       
       <guid>https://leezhu.github.io/post/gobase1/</guid>
-      <description>关键字 break default func interface select case defer go map struct chan else goto package switch const fallthrough if range type continue for import return var  *注意：*关键字不可以使用
+      <description>关键字 break default func interface select case defer go map struct chan else goto package switch const fallthrough if range type continue for import return var  注意:关键字不可以使用
 变量声明： 一般声明： ​ 1、显示声明：var variable int ,变量名是在后面
 ​ 2、隐式声明：var variable = 1, 没有类型
 ​ 3、简短声明：varible:=1 .
