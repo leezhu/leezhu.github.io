@@ -6,10 +6,42 @@
     <description>Recent content on 飞雪的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 27 Dec 2018 22:39:47 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 28 Dec 2018 12:42:28 +0800</lastBuildDate>
     
 	<atom:link href="https://leezhu.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>go语言基础(二)</title>
+      <link>https://leezhu.github.io/post/gobase2/</link>
+      <pubDate>Fri, 28 Dec 2018 12:42:28 +0800</pubDate>
+      
+      <guid>https://leezhu.github.io/post/gobase2/</guid>
+      <description>流程相关 for for在很多编程语言都是有的，golang的for循环与c有点不太一样，倒像是结合了c与python的特性。
+for k,v:=range array{ } for i:=0;i&amp;gt;10,i++{ //i只在此函数内生效 } sum:=100 for sum&amp;lt;200{ //可以当作while来使用， }  if 其实if语言没有什么过多想讲的，但是golang的if有一个特性需要注意一下
+if i:=1;i&amp;gt;10{ //在条件表达式里面可以短变量赋值。所以一般可以直接将需要判断的函数放在表达式里面。 } if x:=myFunc();x&amp;gt;10{ }  switch switch主要用于判断条件简单的，明确的，切分支多的。switch在每个分支里面找到了是自带break的，如果没有找到则继续往下走。
+sum:=2 swith sum{ case 1: fmt.Println(&#39;found&#39;,sum) case 2,3,4: fmt.Println(&amp;quot;found&amp;quot;) default: fmt.Println(&amp;quot;No found&amp;quot;) }  break、continue、goto 似乎每个编程语言都离开不开前两者，goto由于容易破坏语言的流程结构在c语言中被用的很谨慎，当然在go中也是如此，不到万不得已也别使用，不然很难维护，代码可读性也非常差。
+for i:=1;i&amp;gt;10;i++{ if i==2{ break/continue } } flag: fmt.Println(&amp;quot;goto here) for i:=1;i&amp;lt;10;i--{ if i==2{ goto flag } }  函数相关 go函数是以关键字func标明的。一般格式是func myFunc(a int,b string)(int,string){}</description>
+    </item>
+    
+    <item>
+      <title>go基础之数据类型(一)</title>
+      <link>https://leezhu.github.io/post/go_base_1/</link>
+      <pubDate>Thu, 27 Dec 2018 22:34:10 +0000</pubDate>
+      
+      <guid>https://leezhu.github.io/post/go_base_1/</guid>
+      <description>关键字 break default func interface select case defer go map struct chan else goto package switch const fallthrough if range type continue for import return var  *注意：*关键字不可以使用
+变量声明： ######一般声明：
+​ 1、显示声明：var variable int ,变量名是在后面
+​ 2、隐式声明：var variable = 1, 没有类型
+​ 3、简短声明：varible:=1 .
+​ 4、多变量声明：varible1,varible2:=1,2,
+​ 5、_,varible:=1,2. 下划线 _一般用于占位符，不进行使用，可以用于索引等
+######分组声明
+const ( i=100 j=200 ) var ( a=100 b=200 )  注意：go语言是可以不声明类型直接用，但是简短声明是必须在函数内生效，不可用于包内。go和python 有很多类似的地方。分组声明针对于同一种类型的变量可以放在一起声明
+常量： ​ const:是常量的标志，可以定义为多个类型，例如：
+​ 1.const constName =value</description>
+    </item>
     
     <item>
       <title>go基础之变量类型(一)</title>
