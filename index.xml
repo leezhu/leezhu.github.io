@@ -2,7 +2,7 @@
     <channel>
         <title>leezhu</title>
         <link>https://leezhu.github.io/</link>
-        <description>这是我的全新 Hugo 网站</description>
+        <description>个人博客网站，后端技术交流学习、golang、go。酷狗音乐内推</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>leezhu@hnu.edu.cn (leezhu)</managingEditor>
             <webMaster>leezhu@hnu.edu.cn (leezhu)</webMaster><lastBuildDate>Fri, 26 Jun 2020 12:46:15 &#43;0800</lastBuildDate>
             <atom:link href="https://leezhu.github.io/index.xml" rel="self" type="application/rss+xml" />
