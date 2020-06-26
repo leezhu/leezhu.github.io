@@ -1,10 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>大厂 - 标签 - leezhu</title>
-        <link>https://leezhu.github.io/tags/%E5%A4%A7%E5%8E%82/</link>
-        <description>大厂 - 标签 - leezhu</description>
+        <title>yes - 标签 - leezhu</title>
+        <link>https://leezhu.github.io/tags/yes/</link>
+        <description>yes - 标签 - leezhu</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>leezhu@hnu.edu.cn (leezhu)</managingEditor>
-            <webMaster>leezhu@hnu.edu.cn (leezhu)</webMaster><lastBuildDate>Sun, 17 Sep 2017 10:11:10 &#43;0000</lastBuildDate><atom:link href="https://leezhu.github.io/tags/%E5%A4%A7%E5%8E%82/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>leezhu@hnu.edu.cn (leezhu)</webMaster><lastBuildDate>Sun, 17 Sep 2017 10:11:10 &#43;0000</lastBuildDate><atom:link href="https://leezhu.github.io/tags/yes/" rel="self" type="application/rss+xml" /><item>
     <title>秋招找工作那点事</title>
     <link>https://leezhu.github.io/find_job/</link>
     <pubDate>Sun, 17 Sep 2017 10:11:10 &#43;0000</pubDate>
