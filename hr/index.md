@@ -13,7 +13,7 @@
 有意向，在[**官网职位地址**](https://www.kugou.com/hr/kugouHr/dist/index.html)看好职位后，发我邮箱，给你极速内推。空闲的时候可以给你简历把把关，交流交流。
 
 
-邮箱`leezhu@hnu.edu.cn`联系我，欢迎交流学习
+邮箱`leezhu@kugou.net`联系我，欢迎交流学习
 ---
 >许可协议：[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 

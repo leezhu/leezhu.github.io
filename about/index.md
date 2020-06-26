@@ -18,6 +18,6 @@
 看中职位后发简历可极速内推。
 [官网职位地址](https://www.kugou.com/hr/kugouHr/dist/index.html)
 
-可邮箱`leezhu@hnu.edu.cn`联系我，欢迎交流学习，
+也可邮箱`leezhu@hnu.edu.cn`联系我，欢迎交流学习，
 ---
 
