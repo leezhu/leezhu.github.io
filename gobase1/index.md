@@ -92,7 +92,7 @@ var (
 
 ```go
 doubleArray:=[2][4]int{[4]int{1,2,3,4},[3]int{1,2,3}}
-doubleArray:=[2][4]int{{1,2,3},{3,4,5}}
+doubleArray:=[2][4]int{}
 ```
 
 ### 2、slice-动态数组
