@@ -1,126 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>磐石的博客</title>
-    <link>https://leezhu.github.io/</link>
-    <description>Recent content on 磐石的博客</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Fri, 28 Dec 2018 12:42:28 +0800</lastBuildDate>
-    
-	<atom:link href="https://leezhu.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>go语言基础(二)</title>
-      <link>https://leezhu.github.io/post/gobase2/</link>
-      <pubDate>Fri, 28 Dec 2018 12:42:28 +0800</pubDate>
-      
-      <guid>https://leezhu.github.io/post/gobase2/</guid>
-      <description>流程相关 for for在很多编程语言都是有的，golang的for循环与c有点不太一样，倒像是结合了c与python的特性。
-for k,v:=range array{ } for i:=0;i&amp;gt;10,i++{ //i只在此函数内生效 } sum:=100 for sum&amp;lt;200{ //可以当作while来使用， }  if 其实if语言没有什么过多想讲的，但是golang的if有一个特性需要注意一下
-if i:=1;i&amp;gt;10{ //在条件表达式里面可以短变量赋值。所以一般可以直接将需要判断的函数放在表达式里面。 } if x:=myFunc();x&amp;gt;10{ }  switch switch主要用于判断条件简单的，明确的，切分支多的。switch在每个分支里面找到了是自带break的，如果没有找到则继续往下走。
-sum:=2 swith sum{ case 1: fmt.Println(&#39;found&#39;,sum) case 2,3,4: fmt.Println(&amp;quot;found&amp;quot;) default: fmt.Println(&amp;quot;No found&amp;quot;) }  break、continue、goto 似乎每个编程语言都离开不开前两者，goto由于容易破坏语言的流程结构在c语言中被用的很谨慎，当然在go中也是如此，不到万不得已也别使用，不然很难维护，代码可读性也非常差。
-for i:=1;i&amp;gt;10;i++{ if i==2{ break/continue } } flag: fmt.Println(&amp;quot;goto here) for i:=1;i&amp;lt;10;i--{ if i==2{ goto flag } }  函数相关 go函数是以关键字func标明的。一般格式是func myFunc(a int,b string)(int,string){}</description>
-    </item>
-    
-    <item>
-      <title>go基础之变量类型(一)</title>
-      <link>https://leezhu.github.io/post/gobase1/</link>
-      <pubDate>Thu, 27 Dec 2018 22:39:47 +0800</pubDate>
-      
-      <guid>https://leezhu.github.io/post/gobase1/</guid>
-      <description>关键字 break default func interface select case defer go map struct chan else goto package switch const fallthrough if range type continue for import return var  注意:关键字不可以使用
-变量声明： 一般声明： ​ 1、显示声明：var variable int ,变量名是在后面
-​ 2、隐式声明：var variable = 1, 没有类型
-​ 3、简短声明：varible:=1 .
-​ 4、多变量声明：varible1,varible2:=1,2,
-​ 5、_,varible:=1,2. 下划线 _一般用于占位符，不进行使用，可以用于索引等
-分组声明 const ( i=100 j=200 ) var ( a=100 b=200 )  注意：go语言是可以不声明类型直接用，但是简短声明是必须在函数内生效，不可用于包内。go和python 有很多类似的地方。分组声明针对于同一种类型的变量可以放在一起声明
-常量： ​ const:是常量的标志，可以定义为多个类型，例如：
-​ 1.const constName =value</description>
-    </item>
-    
-    <item>
-      <title>Mysql_index</title>
-      <link>https://leezhu.github.io/post/mysql_index/</link>
-      <pubDate>Sun, 14 Oct 2018 10:42:24 +0800</pubDate>
-      
-      <guid>https://leezhu.github.io/post/mysql_index/</guid>
-      <description> 长期在用sql，所以想对mysql做一下简要的整理，主要是最近自己工作需要用到的，和写代码要注意sql语句的地方。
-Tips  Update：不能用子查询，例如update table_name set xx=&#39;&#39; where id in (select id ....),mysql5.7不支持，只能用inner join方式进行处理，将此表联合起来处理。正确姿势是update table_name a inner join(select id from table where id&amp;gt;=.. limit 1,1)t on a.id=t.id set a.&#39;字段&#39;=2;这段代码意思是指定范围内的id进行更新。
- index：1、mysql的索引网上内容很多，这里详细就不赘述了。在实际开发中，对于上百万的行的mysql表来说，将经常查询的语句加上索引能够加快查询，不至于拖垮数据库。2、索引最好在建表的时候就想好建立，不然等到表行数超过上千万时，建索引非常慢。3、对于sql语句，索引的字段类型要符合表字段类型，例如字段是varchar类型，最好用字符型，这样能够加快查找。4、如果涉及数据库的程序比较慢时，最好查下数据库的慢查询日志，看是否是哪条记录。然后就进行优化。5、sql语句没有走索引会很慢，必要时可以加强制索引。
-  Sql 添加索引： ALTER TABLE table_name ADD INDEX index_name (column1, column2,column3 )
-增加列： alter table TABLE_NAME add column NEW_COLUMN_NAME varchar(20) not null default &#39;&#39; comment &#39;&#39;;
-修改索引： --先删除 ALTER TABLE user DROP INDEX idx_user_username; --再以修改后的内容创建同名索引 CREATE INDEX idx_user_username ON user (username(8));  </description>
-    </item>
-    
-    <item>
-      <title>Mac下安装XX—Net(翻墙)</title>
-      <link>https://leezhu.github.io/post/mac_xx--net/</link>
-      <pubDate>Tue, 02 Oct 2018 17:12:59 +0800</pubDate>
-      
-      <guid>https://leezhu.github.io/post/mac_xx--net/</guid>
-      <description>生活就像万花筒，缤纷精彩，于是便有了那些所谓的快乐、幸福。
- xx-net是一个非常好用的翻墙软件，在windows下安装比较方便，但是随着我换Mac后发现没有一个完整的资料介绍安装过程，因此自己在这里介绍下如何安装。我用的Mac Pro17版，Mac安装XX-Net最大的坑就在于开启IPv6比较麻烦，需要关闭Mac权限控制，相当于手机root那种，我建议是安装需要开启IPV6的软件后，将权限又设置回来。Mac对隐私比较注重，因此在安装外部软件的时候，注意要在系统设置里面的隐私选项那里进入后选择一直允许。
-安装chrome xx-net使用的浏览器必须是Chrome，安装包不太容易找。安装完成时需要设定为默认浏览器。
-下载xx-net 可直接下载xx-net解压，在文件里面有一个SwitchyOmega文件夹，将.crx文件放入chrome://extensions扩展程序里进行安装，注意需要打开开发者模式，拖拽到扩展程序页面安装即可。然后进入xx-net文件夹点击[start]()文件，默认会终端打开，会自动打开浏览器。
-更新情景模式 进入启动xx-net自动打开浏览器的页面，点击左侧的Import/Export导入SwitchyOmega文件夹下的[.bak]()备份情景模式文件。导入后，会在左侧多出几个自动切换模式，点击GAE-Proxy自动切换，然后在页面中点击立刻下载模式。启动xx-net后会提示&amp;ldquo;仅 IPv6&amp;rdquo; 不可用，请检查这个时候就需要开启ipv6
-关闭Mac权限控制 Mac是限制安装第三方来源的软件，可以在终端中用csrutil status 命令来查看权限是否打开，如果是enable则需要关闭。可以按以下步骤进行操作：
- 重启开机的时候不停按住comman + r键，会进入修复模式。 在上面选择终端，输入csrutil disable会提示关闭成功，然后重启电脑。  安装开启IPv6软件  下载安装tuntaposx 下载安装mired,注意的是需要将在系统设置中，点击安全与隐私设置，允许一直打开其他来源安装。否则pkg包不会允许安装。  启动xx-net 一切准备就绪后就可以运行xx-net了，在XX-Net文件夹下，点击start会自动打开Chrome，从页面中的状态我们可以看到一切ok，然后选择右侧switchyomega图标中GAE-Proxy自动切换，这时候我们键入google检验安装是否成功。如果不能访问，检查前面5个步骤是否都做到位。</description>
-    </item>
-    
-    <item>
-      <title>阅读书籍推荐</title>
-      <link>https://leezhu.github.io/books/</link>
-      <pubDate>Thu, 13 Sep 2018 02:13:58 +0000</pubDate>
-      
-      <guid>https://leezhu.github.io/books/</guid>
-      <description>未完待续&amp;hellip;</description>
-    </item>
-    
-    <item>
-      <title>分类</title>
-      <link>https://leezhu.github.io/categories/</link>
-      <pubDate>Thu, 13 Sep 2018 01:59:03 +0000</pubDate>
-      
-      <guid>https://leezhu.github.io/categories/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>关于我</title>
-      <link>https://leezhu.github.io/about/</link>
-      <pubDate>Thu, 13 Sep 2018 01:35:46 +0000</pubDate>
-      
-      <guid>https://leezhu.github.io/about/</guid>
-      <description>后端开发工程师，Python、Go初学者.
-不断寻找自己的兴趣与爱好,坚持做好每一件事,爱家人爱生活.三观正,爱国爱党,努力做好党的接班人.</description>
-    </item>
-    
-    <item>
-      <title>归档</title>
-      <link>https://leezhu.github.io/archives/</link>
-      <pubDate>Wed, 12 Sep 2018 10:51:23 +0000</pubDate>
-      
-      <guid>https://leezhu.github.io/archives/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>秋招找工作那点事</title>
-      <link>https://leezhu.github.io/post/find_job/</link>
-      <pubDate>Sun, 17 Sep 2017 10:11:10 +0000</pubDate>
-      
-      <guid>https://leezhu.github.io/post/find_job/</guid>
-      <description>真正的快乐是内在的，它只有在人类的心灵里才能发现。——布雷默
- 秋招整体算是在昨天下午结束了，已经收到了酷狗音乐的offer，工作岗位和薪资都挺满意的，就等着过几天签约了。秋招这一个月左右走过来，其实自我最大的变化是一个心态问题，有心插秧秧不长，无心插柳柳成荫，这句话最能表达我的感受。
-从九月十号开始，陆陆续续投递了超过50+家公司，笔试也将近有30+公司吧，有些是冲突了没做，有些是简历挂了，不过也是少数，面试的公司10+家吧。有时候一天做两三场笔试是很平常的事。也许会感到好奇，为什么我会投如此多公司，面试却这么少？首先投这么多公司是我本身对秋招的恐惧，怕找不到工作，投递公司越多，机会越大，越能平定下自我的焦虑心情。其次，不投递公司而是仅仅等待笔试又是一种深深的折磨，你会感觉到这种压抑，没事干。所以多投，别想太多，别想着公司不好什么的，也是瞎投。然而去不去首先是得你拿到这个offer才有资格这么说嘛。其实今年我们学校计算机招聘的都来的很早，九月多基本上都招聘完了，一天二十多个公司都是可能想去的。以至于那三周非常的累，到了国庆一放松，后面的招聘会都疲软了，都不太想去。我们辅导员都在向我们吐槽，有些公司来了很多面试官，居然一个湖大的学生都没有。其实国庆后，整个院签了一半以上，都差不多了。
-准备笔试 接下来我想讲讲求职的现状，首先从我观察来看，按语言来分，java找工作面还是很广的，进互联网公司更容易，薪资也是很高的，特别是做大数据的，简直高的离谱，我有个同学还说要我下辈子去学大数据，我也只能呵呵了。c++找工作分两块，要么后端开发，要么就是软件开发，对于求职还是比java吃力。当然了，我不是说建议因为找工作而去学习那种语言，首先看自己兴趣爱好，是否偏向于应用，还是偏服务器端。如果都没有的话，那就选java吧，入手快，工作也好找。语言确定下来的话，就需要做相应的准备了。首先强调，我说的只适用于找互联网工作，如果是银行，国企等不适用，可做参考。首先讲讲笔试这块，我觉得只有一个诀窍：
- 去牛课网使劲刷题 刷剑指offer算法 刷过去BAT美团等公司的校招卷子  然后结合着书本，包括数据库、操作系统、Linux、网络等。这样边刷题边看书做笔记提高会很快。当然了，想进互联网公司，我觉得算法是非常重要的东西，首先剑指offer上的题目能随手写出来，常用排序必须会。然后其次再去刷leetcode题目，如果做的差不多，那一面就很稳了。如果平时空余时间，或者睡觉前，可以刷刷牛课网上的BAT面经，也是非常有用。我这可不是托哦，只是觉得牛课网确实对我找工作起了非常大的作用。
-准备面试　 接着是面试这块，项目！项目！项目！重要的事情讲三遍，一定需要弄个项目经验，不然就要和面试官尬聊了。可以去网上找不错的项目，然后自己从头到尾做一遍，明白原理，过程。这样就是你的了。要是自己搞不懂，那就别露馅了，老铁那就扎心了。开源项目！开源项目！开源项目！对，就是开源项目，最好自己参与你那个方向不错的开源项目，而且必须当前比较火的，自己看源码，搞懂一部分，就可以吹牛逼了。说了这些，你离BAT已经很近了。再就是学习下如今比较常用的框架等，如java里面的jvm，spring，mybatis等，因为我是做c++的，所以java这方面不多讲了，具体哪些流行的，请自行百度。有了这些，就再看看程序员面试宝典，这么下来也差不多了。老铁那就稳了。
-以上自己讲的也挺粗略的，其实一句话就可以概括，早点准备，早点刷题，那就差不多了。再补一句，实习进BAT是最容易的，当然也要冒着实习留不下来的风险，就算没留下来，你也要准备秋招，也算赚到互联网公司实习经验了。祝大家都找到心仪的工作。</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>leezhu</title>
+        <link>http://example.org/</link>
+        <description>这是我的全新 Hugo 网站</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>leezhu@hnu.edu.cn (leezhu)</managingEditor>
+            <webMaster>leezhu@hnu.edu.cn (leezhu)</webMaster><lastBuildDate>Fri, 26 Jun 2020 12:46:15 &#43;0800</lastBuildDate>
+            <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>Second</title>
+    <link>http://example.org/second/</link>
+    <pubDate>Fri, 26 Jun 2020 12:29:15 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/second/</guid>
+    <description><![CDATA[sdfdsfdsfsdfsdfsssssssssssssssssssssssss sdfssss sdfsdfs sdfsdfs sdfsdf
+sdfsdfsdf s dsf]]></description>
+</item><item>
+    <title>First</title>
+    <link>http://example.org/first/</link>
+    <pubDate>Fri, 26 Jun 2020 10:48:22 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/first/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
 </rss>
