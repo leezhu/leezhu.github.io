@@ -1,25 +1,25 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>leezhu</title>
-        <link>http://example.org/</link>
+        <link>https://leezhu.github.io/</link>
         <description>这是我的全新 Hugo 网站</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>leezhu@hnu.edu.cn (leezhu)</managingEditor>
             <webMaster>leezhu@hnu.edu.cn (leezhu)</webMaster><lastBuildDate>Fri, 26 Jun 2020 12:46:15 &#43;0800</lastBuildDate>
-            <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+            <atom:link href="https://leezhu.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Second</title>
-    <link>http://example.org/second/</link>
+    <link>https://leezhu.github.io/second/</link>
     <pubDate>Fri, 26 Jun 2020 12:29:15 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>http://example.org/second/</guid>
+    <guid>https://leezhu.github.io/second/</guid>
     <description><![CDATA[sdfdsfdsfsdfsdfsssssssssssssssssssssssss sdfssss sdfsdfs sdfsdfs sdfsdf
 sdfsdfsdf s dsf]]></description>
 </item><item>
     <title>First</title>
-    <link>http://example.org/first/</link>
+    <link>https://leezhu.github.io/first/</link>
     <pubDate>Fri, 26 Jun 2020 10:48:22 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>http://example.org/first/</guid>
+    <guid>https://leezhu.github.io/first/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
