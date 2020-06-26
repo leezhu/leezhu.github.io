@@ -1,80 +1,80 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>leezhu</title>
-        <link>http://example.org/</link>
+        <link>https://leezhu.github.io/</link>
         <description>这是我的全新 Hugo 网站</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>leezhu@hnu.edu.cn (leezhu)</managingEditor>
             <webMaster>leezhu@hnu.edu.cn (leezhu)</webMaster><lastBuildDate>Fri, 26 Jun 2020 12:46:15 &#43;0800</lastBuildDate>
-            <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+            <atom:link href="https://leezhu.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>[内推]酷狗音乐后端工程师招聘</title>
-    <link>http://example.org/hr/</link>
+    <link>https://leezhu.github.io/hr/</link>
     <pubDate>Fri, 26 Jun 2020 19:02:22 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>http://example.org/hr/</guid>
+    <guid>https://leezhu.github.io/hr/</guid>
     <description><![CDATA[酷狗音乐后端工程师招聘 酷狗自从16年加入腾讯音乐娱乐集团后，企业发展前景一路开挂(毕竟抱大腿)，已于18年登陆纳斯达克，作者也是那一年加入公]]></description>
 </item><item>
     <title>Hugo博客搭建</title>
-    <link>http://example.org/hugo/</link>
+    <link>https://leezhu.github.io/hugo/</link>
     <pubDate>Fri, 26 Jun 2020 19:46:32 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>http://example.org/hugo/</guid>
-    <description><![CDATA[]]></description>
+    <guid>https://leezhu.github.io/hugo/</guid>
+    <description><![CDATA[个人博客网站，后端技术交流学习、golang、go。酷狗音乐内推]]></description>
 </item><item>
     <title>Leetcode_12</title>
-    <link>http://example.org/leetcode_12/</link>
+    <link>https://leezhu.github.io/leetcode_12/</link>
     <pubDate>Wed, 02 Jan 2019 22:25:33 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>http://example.org/leetcode_12/</guid>
-    <description><![CDATA[]]></description>
+    <guid>https://leezhu.github.io/leetcode_12/</guid>
+    <description><![CDATA[个人博客网站，后端技术交流学习、golang、go。酷狗音乐内推]]></description>
 </item><item>
     <title>Go语言基础（三）</title>
-    <link>http://example.org/gobase3/</link>
+    <link>https://leezhu.github.io/gobase3/</link>
     <pubDate>Tue, 01 Jan 2019 22:10:36 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>http://example.org/gobase3/</guid>
-    <description><![CDATA[]]></description>
+    <guid>https://leezhu.github.io/gobase3/</guid>
+    <description><![CDATA[个人博客网站，后端技术交流学习、golang、go。酷狗音乐内推]]></description>
 </item><item>
     <title>Go语言基础（二）</title>
-    <link>http://example.org/gobase2/</link>
+    <link>https://leezhu.github.io/gobase2/</link>
     <pubDate>Fri, 28 Dec 2018 12:42:28 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>http://example.org/gobase2/</guid>
-    <description><![CDATA[]]></description>
+    <guid>https://leezhu.github.io/gobase2/</guid>
+    <description><![CDATA[个人博客网站，后端技术交流学习、golang、go。酷狗音乐内推]]></description>
 </item><item>
     <title>Go语言基础（一）</title>
-    <link>http://example.org/gobase1/</link>
+    <link>https://leezhu.github.io/gobase1/</link>
     <pubDate>Thu, 27 Dec 2018 22:39:47 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>http://example.org/gobase1/</guid>
-    <description><![CDATA[]]></description>
+    <guid>https://leezhu.github.io/gobase1/</guid>
+    <description><![CDATA[个人博客网站，后端技术交流学习、golang、go。酷狗音乐内推]]></description>
 </item><item>
     <title>Mysql索引操作</title>
-    <link>http://example.org/mysql_index/</link>
+    <link>https://leezhu.github.io/mysql_index/</link>
     <pubDate>Sun, 14 Oct 2018 10:42:24 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>http://example.org/mysql_index/</guid>
-    <description><![CDATA[]]></description>
+    <guid>https://leezhu.github.io/mysql_index/</guid>
+    <description><![CDATA[个人博客网站，后端技术交流学习、golang、go。酷狗音乐内推]]></description>
 </item><item>
     <title>Mac下安装XX—Net(翻墙)</title>
-    <link>http://example.org/mac_xx-net/</link>
+    <link>https://leezhu.github.io/mac_xx-net/</link>
     <pubDate>Tue, 02 Oct 2018 17:12:59 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>http://example.org/mac_xx-net/</guid>
-    <description><![CDATA[]]></description>
+    <guid>https://leezhu.github.io/mac_xx-net/</guid>
+    <description><![CDATA[个人博客网站，后端技术交流学习、golang、go。酷狗音乐内推]]></description>
 </item><item>
     <title>秋招找工作那点事</title>
-    <link>http://example.org/find_job/</link>
+    <link>https://leezhu.github.io/find_job/</link>
     <pubDate>Sun, 17 Sep 2017 10:11:10 &#43;0000</pubDate>
     <author>作者</author>
-    <guid>http://example.org/find_job/</guid>
-    <description><![CDATA[]]></description>
+    <guid>https://leezhu.github.io/find_job/</guid>
+    <description><![CDATA[个人博客网站，后端技术交流学习、golang、go。酷狗音乐内推]]></description>
 </item><item>
     <title>读《追风筝的人》有感</title>
-    <link>http://example.org/kite/</link>
+    <link>https://leezhu.github.io/kite/</link>
     <pubDate>Mon, 10 Jul 2017 09:01:56 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>http://example.org/kite/</guid>
-    <description><![CDATA[]]></description>
+    <guid>https://leezhu.github.io/kite/</guid>
+    <description><![CDATA[个人博客网站，后端技术交流学习、golang、go。酷狗音乐内推]]></description>
 </item></channel>
 </rss>
