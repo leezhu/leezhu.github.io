@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>大话智能优化算法之遗传算法 - leezhu</title><meta name="Description" content="这是我的全新 Hugo 网站"><meta property="og:title" content="大话智能优化算法之遗传算法" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/inheritance/" />
+<meta property="og:image" content="http://example.org/logo.png"/>
+<meta property="article:published_time" content="2016-03-28T17:23:01+08:00" />
+<meta property="article:modified_time" content="2016-03-28T17:23:01+08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://example.org/logo.png"/>
+
+<meta name="twitter:title" content="大话智能优化算法之遗传算法"/>
+<meta name="twitter:description" content=""/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/inheritance/" /><link rel="prev" href="http://example.org/quicksort/" /><link rel="next" href="http://example.org/kite/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "大话智能优化算法之遗传算法",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/inheritance\/"
+        },"genre": "posts","keywords": "遗传算法","wordcount":  1359 ,
+        "url": "http:\/\/example.org\/inheritance\/","datePublished": "2016-03-28T17:23:01+08:00","dateModified": "2016-03-28T17:23:01+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "leezhu"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="leezhu"><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="ss"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/" title="Github"><a class=menu-item href=https://github.com/leezhu title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github fa-fw"></i></a>  </a><a class="menu-item" href="/about/" title="sections"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="leezhu"><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="ss">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/" title="Github"><a class=menu-item href=https://github.com/leezhu title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github fa-fw"></i></a></a><a class="menu-item" href="/about/" title="sections">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">大话智能优化算法之遗传算法</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="github.com/leezhu" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>leezhu</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E7%AE%97%E6%B3%95/"><i class="far fa-folder fa-fw"></i>算法</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2016-03-28">2016-03-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1359 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#基本概念">基本概念</a></li>
+    <li><a href="#举例">举例</a>
+      <ul>
+        <li><a href="#初始化">初始化</a></li>
+        <li><a href="#交叉变异">交叉变异</a></li>
+        <li><a href="#筛选">筛选</a></li>
+      </ul>
+    </li>
+    <li><a href="#总结">总结</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="基本概念">基本概念</h2>
+<p><code>遗传算法</code>是根据生物进化理论得来的，在自然社会中，我们染色体的交叉变异都是随机的，适应能力强的生物得以抵抗恶劣环境发生变异能够存活下来，而适应能力不强的将消亡。</p>
+<p>基于这种概念，我们是否可以考虑，在求最优值时，利用随机的变异交叉，迭代(可以认为是繁殖的多少代)，将变异后好的样本值(目标值好的)留下来，然后将差的后代去掉，用好的来繁殖，进行迭代，这就是我们所说的优生优育啊。基因好的就该多生，目前这我们还没这政策呢。</p>
+<h2 id="举例">举例</h2>
+<blockquote>
+<p>我举个简单例子，假如我求一个连续函数的最大值，比如y(x)=x2(这里是x的平方),x范围为[-2,2]。这个函数的函数值就是我们的<code>适应度</code>啊，有的x对应的函数值大，就留下来，有的很小我就用好的替换掉。</p>
+</blockquote>
+<p>万物都是起源的对不，我也得首先给它造个亚当，夏娃啊。当然我们不只是造一个啦，我们造多个啊，这个群体人口基数大了才能迅速产生优良个体撒。</p>
+<h3 id="初始化">初始化</h3>
+<p>所以我们就先初始化样本个体，但是如何初始化啊，这个就涉及到编码问题了，学过生物我们都知道人体有23条染色体，染色体间是实现片段的交叉变异，但是我们这是一个值啊1,2,0.1等，这时我们就想到了用编码，二进制编码，反正只有0,1而且二进制和十进制之间是相互转换的嘛。但是我们取值的范围不是[-2,2]么，长度是4，转化为二进制就是100，很明显取值也只能是0，1,2,3,4，加上-2，就是可以取-2，-1,0,1,2。可是这个太短了吧样本，交叉变异都不好弄，这时我们发现我们精度不够，取值只有这几个呀，所以我们想到取精度为1呀，保留后一位，那取值长度个数就变成了4/0.1=40啊，这时二进制编码长度就有32~64之间，明显我们取6，即1000000，注意到其中的我们变量值x到基因值的转化，这个自己琢磨。</p>
+<h3 id="交叉变异">交叉变异</h3>
+<p>有了样本个体后我们就开始交叉，变异嘛，你要问我如何交叉，就是随机选两个样本来造下一代嘛，呃呃，不是酱紫的。就是随机先选择群体中的两个样本，然后用rand()随机生成在哪个位置交叉啊，就是两个样本在指定位置进行交换嘛，也就是交换0,1.一般的嘛，我们这么想交叉的越多，是不是进化的越快啊，想想人类也有几万亿年了。所以，看你设定随机交叉的次数了，交叉了我们就开始变异啊，这个更好办了，随机指定变异位置，反正就是0,1的变化。</p>
+<h3 id="筛选">筛选</h3>
+<p>这时我们就需要进行刷选了，有些样本不行就扔掉了。可是我们如何来确定好与坏呢，对的，我们还先计算函数值大小嘛，也就是y(x)的值。每个样本都这个适应度(函数值)。这就开始找吧，找到最好的，找到最差的，不过我们可是知道啊，每一代进化是不是有个最好的呀，然后从亚当夏娃开始，我们就记录一个更更好的个体，它是所有代里面最好的。然后呢，我们就需要将用这个最最好的个体来代替每一代选出来不行的样本啊，让它进化啊。一旦某一代出现了更好的样本，我们也需要更新这个最最好的样本嘛。</p>
+<h2 id="总结">总结</h2>
+<p>这样，就完啦，遗传算法就这么简单呀，你给指定交叉变异来个100代，能得出最好的个体的。当然遗传算法还有许多变种，可是明白这最基础的原理是最重要的，有兴趣的可以解决离散问题的tsp问题，也很有意思。</p>
+<pre><code>原文出自我的csdb[博客](https://blog.csdn.net/zlhn55/article/details/50999573)
+</code></pre>
+<blockquote>
+<p>许可协议：<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener noreffer">CC BY-NC-ND 4.0</a></p>
+</blockquote></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2016-03-28</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/inheritance/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="http://example.org/inheritance/" data-title="大话智能优化算法之遗传算法" data-via="leezhu14" data-hashtags="遗传算法"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://example.org/inheritance/" data-hashtag="遗传算法"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 WhatsApp" data-sharer="whatsapp" data-url="http://example.org/inheritance/" data-title="大话智能优化算法之遗传算法" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="http://example.org/inheritance/" data-title="大话智能优化算法之遗传算法"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://example.org/inheritance/" data-title="大话智能优化算法之遗传算法"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Myspace" data-sharer="myspace" data-url="http://example.org/inheritance/" data-title="大话智能优化算法之遗传算法" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="分享到 Blogger" data-sharer="blogger" data-url="http://example.org/inheritance/" data-title="大话智能优化算法之遗传算法" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="http://example.org/inheritance/" data-title="大话智能优化算法之遗传算法"><i class="fab fa-evernote fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95/">遗传算法</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/quicksort/" class="prev" rel="prev" title="快速排序法两种代码实现方式讲解"><i class="fas fa-angle-left fa-fw"></i>快速排序法两种代码实现方式讲解</a>
+            <a href="/kite/" class="next" rel="next" title="读《追风筝的人》有感">读《追风筝的人》有感<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"><div id="gitalk" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.68.3">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2018 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="github.com/leezhu" target="_blank">leezhu</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp">Freedom</span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/gitalk/gitalk.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/gitalk/gitalk.min.js"></script><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/twemoji/twemoji.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"gitalk":{"admin":["leezhu"],"clientID":"053d50fb7d76be0888b8","clientSecret":"1a6fd50b35682fa1b3ac85fec148671b9da2761d","id":"2016-03-28T17:23:01+08:00","owner":"leezhu","repo":"leezhu.github.io","title":"大话智能优化算法之遗传算法"}},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"id-1":"leezhu","id-2":"leezhu"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"},"twemoji":true,"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
