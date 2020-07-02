@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>遗传算法 - 标签 - leezhu</title>
+        <title>遗传算法 - 标签 - leezhu blog</title>
         <link>https://leezhu.github.io/tags/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95/</link>
-        <description>遗传算法 - 标签 - leezhu</description>
+        <description>遗传算法 - 标签 - leezhu blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>leezhu@hnu.edu.cn (leezhu)</managingEditor>
             <webMaster>leezhu@hnu.edu.cn (leezhu)</webMaster><lastBuildDate>Mon, 28 Mar 2016 17:23:01 &#43;0800</lastBuildDate><atom:link href="https://leezhu.github.io/tags/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95/" rel="self" type="application/rss+xml" /><item>
     <title>大话智能优化算法之遗传算法</title>

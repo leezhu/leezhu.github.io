@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Mac - 标签 - leezhu</title>
+        <title>Mac - 标签 - leezhu blog</title>
         <link>https://leezhu.github.io/tags/mac/</link>
-        <description>Mac - 标签 - leezhu</description>
+        <description>Mac - 标签 - leezhu blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>leezhu@hnu.edu.cn (leezhu)</managingEditor>
             <webMaster>leezhu@hnu.edu.cn (leezhu)</webMaster><lastBuildDate>Tue, 02 Oct 2018 17:12:59 &#43;0800</lastBuildDate><atom:link href="https://leezhu.github.io/tags/mac/" rel="self" type="application/rss+xml" /><item>
     <title>Mac下安装XX—Net(翻墙)</title>

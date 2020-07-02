@@ -1,6 +1,6 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>leezhu</title>
+        <title>leezhu blog</title>
         <link>https://leezhu.github.io/</link>
         <description>个人博客网站，后端技术交流学习、golang、go。酷狗音乐内推</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>leezhu@hnu.edu.cn (leezhu)</managingEditor>

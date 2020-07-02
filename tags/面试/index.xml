@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>面试 - 标签 - leezhu</title>
+        <title>面试 - 标签 - leezhu blog</title>
         <link>https://leezhu.github.io/tags/%E9%9D%A2%E8%AF%95/</link>
-        <description>面试 - 标签 - leezhu</description>
+        <description>面试 - 标签 - leezhu blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>leezhu@hnu.edu.cn (leezhu)</managingEditor>
             <webMaster>leezhu@hnu.edu.cn (leezhu)</webMaster><lastBuildDate>Wed, 02 Jan 2019 22:25:33 &#43;0800</lastBuildDate><atom:link href="https://leezhu.github.io/tags/%E9%9D%A2%E8%AF%95/" rel="self" type="application/rss+xml" /><item>
     <title>Leetcode_12</title>
