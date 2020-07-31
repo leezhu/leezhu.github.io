@@ -2,20 +2,23 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://leezhu.github.io/hr/</loc><lastmod>2020-06-26T19:02:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://leezhu.github.io/categories/</loc><lastmod>2020-06-26T19:46:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://leezhu.github.io/tags/hugo/</loc><lastmod>2020-06-26T19:46:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://leezhu.github.io/hugo/</loc><lastmod>2020-06-26T19:46:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://leezhu.github.io/posts/</loc><lastmod>2020-06-26T19:46:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://leezhu.github.io/tags/</loc><lastmod>2020-06-26T19:46:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://leezhu.github.io/tags/%E5%8D%9A%E5%AE%A2/</loc><lastmod>2020-06-26T19:46:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://leezhu.github.io/categories/%E5%B7%A5%E5%85%B7/</loc><lastmod>2020-06-26T19:46:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://leezhu.github.io/tags/%E5%86%85%E6%8E%A8/</loc><lastmod>2020-06-26T19:02:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://leezhu.github.io/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/</loc><lastmod>2020-06-26T19:02:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://leezhu.github.io/categories/%E6%B1%82%E8%81%8C/</loc><lastmod>2020-06-26T19:02:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://leezhu.github.io/tags/%E9%85%B7%E7%8B%97/</loc><lastmod>2020-06-26T19:02:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://leezhu.github.io/about/</loc><lastmod>2020-06-26T12:46:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://leezhu.github.io/</loc><lastmod>2020-06-26T12:46:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://leezhu.github.io/hr/</loc><lastmod>2020-06-26T19:02:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://leezhu.github.io/categories/</loc><lastmod>2020-07-31T19:36:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://leezhu.github.io/posts/</loc><lastmod>2020-07-31T19:36:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://leezhu.github.io/tags/</loc><lastmod>2020-07-31T19:36:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://leezhu.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F/</loc><lastmod>2020-07-31T19:36:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://leezhu.github.io/distribution/</loc><lastmod>2020-07-31T19:36:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://leezhu.github.io/categories/%E6%9E%B6%E6%9E%84/</loc><lastmod>2020-07-31T19:36:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://leezhu.github.io/tags/hugo/</loc><lastmod>2020-06-26T19:46:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://leezhu.github.io/hugo/</loc><lastmod>2020-06-26T19:46:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://leezhu.github.io/tags/%E5%8D%9A%E5%AE%A2/</loc><lastmod>2020-06-26T19:46:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://leezhu.github.io/categories/%E5%B7%A5%E5%85%B7/</loc><lastmod>2020-06-26T19:46:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://leezhu.github.io/tags/%E5%86%85%E6%8E%A8/</loc><lastmod>2020-06-26T19:02:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://leezhu.github.io/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/</loc><lastmod>2020-06-26T19:02:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://leezhu.github.io/categories/%E6%B1%82%E8%81%8C/</loc><lastmod>2020-06-26T19:02:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://leezhu.github.io/tags/%E9%85%B7%E7%8B%97/</loc><lastmod>2020-06-26T19:02:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://leezhu.github.io/about/</loc><lastmod>2020-06-26T12:46:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://leezhu.github.io/</loc><lastmod>2020-06-26T12:46:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://leezhu.github.io/categories/leetcode/</loc><lastmod>2019-01-02T22:25:33&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://leezhu.github.io/leetcode_12/</loc><lastmod>2019-01-02T22:25:33&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://leezhu.github.io/tags/%E5%88%B7%E9%A2%98/</loc><lastmod>2019-01-02T22:25:33&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
